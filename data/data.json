@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "username": "GOLDEN123",
+      "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/ng.svg",
+      "return": 81.1,
+      "pct": 0.0,
+      "prize": 100.0
+    },
+    {
+      "rank": 2,
+      "username": "Bisal000",
+      "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/in.svg",
+      "return": 12.99,
+      "pct": 68.11,
+      "prize": 50.0
+    },
+    {
+      "rank": 3,
+      "username": "Erick_Fx",
+      "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/ng.svg",
+      "return": 6.03,
+      "pct": 75.07,
+      "prize": 25
+    },
+    {
+      "rank": 4,
+      "username": "Shivam7983",
+      "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/in.svg",
+      "return": 198.39,
+      "pct": 0.0,
+      "prize": "Experience + Bragging Rights"
+    },
+    {
+      "rank": 5,
+      "username": "Jess338133",
+      "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/ng.svg",
+      "return": 65.2,
+      "pct": 133.18,
+      "prize": "Experience + Bragging Rights"
+    },
+    {
+      "rank": 6,
+      "username": "Tee588",
+      "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/ng.svg",
+      "return": 60.4,
+      "pct": 137.99,
+      "prize": "Experience + Bragging Rights"
+    }
+  ]
+}
