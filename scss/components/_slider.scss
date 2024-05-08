@@ -1,0 +1,25 @@
+// Slider Prize
+.slider-prize {
+  max-width: 80rem;
+  height: 64rem;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(16, 16, 24, 1),
+      rgba(16, 16, 24, 0),
+      rgba(16, 16, 24, 0),
+      rgba(16, 16, 24, 0),
+      rgba(16, 16, 24, 1)
+    );
+    z-index: 999;
+  }
+}

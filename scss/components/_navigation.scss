@@ -1,0 +1,112 @@
+.nav {
+  transition: 0.2s ease;
+
+  @include respond(tab-port-big) {
+    display: none;
+  }
+
+  &__logo {
+    display: none;
+  }
+
+  &__link {
+    position: relative;
+    color: var(--gray-100);
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 1.7rem;
+    padding: 2rem 0;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0;
+      background-color: var(--primary-100);
+      transition: width 0.2s ease;
+    }
+
+    &:hover::before {
+      width: 100%;
+
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+
+    &--secondary {
+      background-color: var(--primary-100);
+      color: var(--gray-100);
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1.4rem;
+      transition: 0.2s ease;
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        background-color: var(--primary-200);
+      }
+    }
+  }
+}
+
+.auth-container {
+  font-size: 1.7rem;
+}
+
+@include respond(tab-port-big) {
+  .active.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+    background-color: rgba(16, 16, 24, 0.95);
+    backdrop-filter: blur(1rem);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2rem;
+
+    .nav__link {
+      margin-right: 0;
+      font-size: 2.6rem;
+
+      &:hover {
+        color: var(--gray-300);
+      }
+    }
+
+    .nav__link--secondary {
+      margin-top: 3rem;
+      padding: 1.5rem 3rem;
+      font-size: 2rem;
+
+      &:hover {
+        color: var(--gray-100);
+      }
+    }
+
+    .nav__logo {
+      display: block;
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      width: 10rem;
+      opacity: 0.2;
+    }
+  }
+}

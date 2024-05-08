@@ -1,0 +1,67 @@
+.feature-competitions {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  &:hover &__img {
+    filter: grayscale(0) brightness(40%);
+    transform: scale(1.2) rotate(5deg);
+  }
+
+  &:hover .heading-quaternary {
+    transform: translateX(1rem);
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    filter: grayscale(100%) brightness(30%);
+    transition: 0.2s ease;
+    transform: scale(1);
+  }
+
+  &__footer {
+    padding: 0 1rem 1rem 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h5 {
+    color: var(--gray-100);
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .heading-quaternary {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--primary-200);
+    padding: 0.5rem 1rem;
+    width: max-content;
+    transition: 0.2s ease;
+  }
+
+  &__prize {
+    background-color: var(--gray-500);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--green);
+    }
+
+    span {
+      font-size: 1.5rem;
+      color: var(--gray-300);
+    }
+  }
+}

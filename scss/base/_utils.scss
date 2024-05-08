@@ -1,0 +1,60 @@
+.mb-xs {
+  margin-bottom: 1rem !important;
+}
+
+.mb-sm {
+  margin-bottom: 2rem !important;
+}
+
+.mb-md {
+  margin-bottom: 2rem !important;
+}
+
+.mb-lg {
+  margin-bottom: 3rem !important;
+}
+
+.mb-xl {
+  margin-bottom: 6rem !important;
+}
+
+.mb-2xl {
+  margin-bottom: 8rem !important;
+}
+
+.pt-3xl {
+  padding-top: 12rem !important;
+}
+
+.pb-reset {
+  padding-bottom: 0 !important;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.col-reverse {
+  @include respond(tab-port-big) {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline-el {
+  display: inline-block !important;
+}
+
+.right-alignment {
+  text-align: right;
+}

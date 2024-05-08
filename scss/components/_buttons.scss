@@ -1,0 +1,108 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.25rem 5rem;
+    display: inline-block;
+    border-radius: 30rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: var(--default-font-size);
+    font-weight: 400;
+
+    border: none;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.7rem;
+      padding: 0.75rem 4rem;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    background-image: linear-gradient(
+      to right,
+      var(--primary-100),
+      var(--primary-200)
+    );
+    color: var(--gray-100);
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        var(--primary-200),
+        var(--primary-100)
+      );
+    }
+  }
+
+  &--secondary {
+    background-image: linear-gradient(
+      to right,
+      var(--gray-100),
+      var(--gray-200)
+    );
+    color: var(--gray-500);
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        var(--gray-200),
+        var(--gray-100)
+      );
+    }
+  }
+
+  &--tertiary {
+    background-image: linear-gradient(
+      to right,
+      var(--gray-400),
+      var(--gray-600)
+    );
+    color: var(--gray-100);
+
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        var(--gray-600),
+        var(--gray-400)
+      );
+    }
+  }
+}
+
+.default-link {
+  text-decoration: none;
+  color: var(--gray-300);
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: var(--gray-100);
+  }
+
+  &__icon {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: var(--primary-100);
+  }
+
+  &--secondary {
+    color: var(--gray-100);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

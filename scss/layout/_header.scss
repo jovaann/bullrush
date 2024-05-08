@@ -1,0 +1,91 @@
+.header {
+  height: calc(100vh - 6rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(rgba(16, 16, 24, 0.8), rgba(16, 16, 24, 1)),
+    url("https://bullrush.com/wp-content/themes/playerx-child/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &__bottom {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+
+    @include respond(phone) {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .heading-quaternary {
+      font-size: 1.7rem;
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+
+  .heading-primary {
+    margin-bottom: 3rem;
+  }
+}
+
+.hero {
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+
+  &__btns {
+    display: flex;
+
+    @include respond(phone) {
+      flex-direction: column;
+      margin-bottom: 6rem;
+
+      .btn {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+          width: 30rem;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .heading-primary {
+    font-size: 8rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      font-weight: 500;
+    }
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+    font-family: var(--font-fmaily);
+    font-weight: 300;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+}

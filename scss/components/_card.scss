@@ -1,0 +1,44 @@
+.card {
+  background: linear-gradient(
+    to bottom right,
+    var(--gray-500),
+    var(--gray-600)
+  );
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &::before {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+  }
+
+  &::before {
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y),
+      rgba(255, 41, 59, 0.1),
+      rgba(255, 41, 59, 0.1),
+      transparent 40%
+    );
+    z-index: 3;
+  }
+}

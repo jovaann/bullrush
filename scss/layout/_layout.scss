@@ -1,0 +1,143 @@
+.row {
+  max-width: var(--row-width);
+  margin: 0 auto;
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+
+  @include respond(tab-port-big) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section {
+  width: 100%;
+  padding: 14rem 0;
+  border-top: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+  transition: transform 1s, opacity 1s;
+
+  @include respond(tab-land) {
+    padding: 14rem 2rem;
+  }
+
+  &--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+
+  &--full {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .row .col-2 {
+      align-items: center;
+    }
+  }
+}
+
+#section-competition .row .col-2,
+#section-overview .row .col-2 {
+  @include respond(tab-port-big) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+#section-trading .row .col-2 .section-img {
+  display: flex;
+  justify-self: end;
+}
+
+#section-competition {
+  .row {
+    position: relative;
+  }
+  .image-blur {
+    position: absolute;
+    left: -20rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
+
+#section-trading {
+  .row {
+    position: relative;
+  }
+  .image-blur {
+    position: absolute;
+    right: -40rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+
+    @include respond(tab-port) {
+      right: 0;
+    }
+  }
+}
+
+#section-overview {
+  .row {
+    position: relative;
+  }
+  .image-blur {
+    position: absolute;
+    left: -30rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
+
+#section-win-prizes {
+  .row {
+    position: relative;
+  }
+  .image-blur {
+    position: absolute;
+    left: -30rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
+
+#section-upcoming-competition {
+  .row {
+    position: relative;
+  }
+  .image-blur {
+    position: absolute;
+    right: -40rem;
+    bottom: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+
+    @include respond(tab-port) {
+      right: 0;
+    }
+  }
+}
