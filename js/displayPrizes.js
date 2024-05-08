@@ -2,7 +2,7 @@
 
 const displayPrizes = async function () {
   try {
-    const res = await fetch(`https://bullrush.com/wp-content/themes/playerx-child/data/data.json`);
+    const res = await fetch(`data/data.json`);
     const data = await res.json();
 
     if (!res.ok) throw new Error(`${data.message} (${res.status})`);
@@ -22,11 +22,6 @@ const displayPrizes = async function () {
         prize: prizeAmount,
       } = prize;
 
-      const prizeMarkup =
-        typeof prizeAmount === "number"
-          ? `<span class="prize__info--num">$${prizeAmount.toFixed(2)}</span>`
-          : `<span class="prize__info--txt">${prizeAmount}</span>`;
-
       const markup = `
         <div class="swiper-slide">
           <div class="prize">
@@ -44,7 +39,7 @@ const displayPrizes = async function () {
             </div>
             <div class="prize__info">
               <span>Prize</span>
-              ${prizeMarkup}
+              <span class="prize__info--num">$${prizeAmount.toFixed(2)}</span>
             </div>
           </div>
         </div>

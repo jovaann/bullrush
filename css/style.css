@@ -794,6 +794,11 @@ body {
   height: 4rem;
   margin-bottom: 1.5rem;
 }
+.footer .heading-quaternary {
+  font-size: 1.7rem;
+  color: var(--gray-300);
+  margin-bottom: 1rem;
+}
 .footer .paragraph,
 .footer .default-link {
   font-size: 1.7rem;
@@ -997,6 +1002,11 @@ body {
   #section-trading .image-blur {
     right: 0;
   }
+}
+#section-trading .section-img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 #section-overview .row {

@@ -28,25 +28,25 @@
       "rank": 4,
       "username": "Shivam7983",
       "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/in.svg",
-      "return": 198.39,
+      "return": 5.60,
       "pct": 0.0,
-      "prize": "Experience + Bragging Rights"
+      "prize": 20
     },
     {
       "rank": 5,
       "username": "Jess338133",
       "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/ng.svg",
-      "return": 65.2,
-      "pct": 133.18,
-      "prize": "Experience + Bragging Rights"
+      "return": 3.21,
+      "pct": 1,
+      "prize": 15
     },
     {
       "rank": 6,
       "username": "Tee588",
       "flag": "https://bullrush.com/wp-content/themes/playerx-child/img/ng.svg",
-      "return": 60.4,
-      "pct": 137.99,
-      "prize": "Experience + Bragging Rights"
+      "return": 2.89,
+      "pct": 0.5,
+      "prize": 10
     }
   ]
 }
